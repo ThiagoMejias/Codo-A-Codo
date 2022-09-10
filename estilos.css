@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-image: url(./images/banner\ terrible\ mirada\ roja\ face.png);
+    background-size: 100% 35vh;
+}
+
+.div_header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background: rgba(34, 205, 120, 0.5);
+}
+
+.logo {
+    padding: 10px 30px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+}
+
+.lista_enlaces {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.items_nav {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-decoration: none;
+    background: rgba(245, 0, 0, 1);
+}
+
+.items_nav:hover {
+    background: rgba(130, 158, 89,0.4);
+}
+
+.titulo {
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+.tit_sobre_nosotros {
+}
+
+.div_sobre_nosotros {
+    display: flex;
+}
+
+.div_detalles {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    margin-left: 100px;
+}
