@@ -3,15 +3,17 @@
 }
 
 header {
-    background-image: url(./images/banner\ terrible\ mirada\ roja\ face.png);
-    background-size: 100% 35vh;
+    
 }
 
 .div_header {
     display: flex;
     width: 100%;
+    height: 30%;
     position: fixed;
     background: rgba(34, 205, 120, 0.5);
+    background-image: url(./images/banner\ terrible\ mirada\ roja\ face.png);
+    background-size: 100% 100%;
 }
 
 .logo {
@@ -35,7 +37,7 @@ header {
     color: rgb(0, 0, 0);
     padding: 10px 30px;
     text-decoration: none;
-    background: rgba(245, 0, 0, 1);
+    background: rgba(245, 0, 0, .2);
 }
 
 .items_nav:hover {
@@ -59,4 +61,14 @@ header {
     justify-content: center;
     width: 100%;
     margin-left: 100px;
+}
+
+.video__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.video {
+
 }
