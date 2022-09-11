@@ -1,22 +1,52 @@
 * {
     margin: 0;
+
+
+}
+
+section {
+    width: 100%;
+    height: 768px;
+}
+
+body {
+    /* position: absolute;
+    Background-repeat: no-repeat;
+    Background-size: cover; */
+
+    background-color: #BD0003
 }
 
 header {
-    
+    width: 100px;
+    height: 101px;
+    background-color: #BD0003;
+
+
 }
 
 .div_header {
     display: flex;
     width: 100%;
-    height: 30%;
+    height: 101px;
     position: fixed;
-    background: rgba(34, 205, 120, 0.5);
-    background-image: url(./images/banner\ terrible\ mirada\ roja\ face.png);
+    background-color: #BD0003;
     background-size: 100% 100%;
+
+
 }
 
+.section_inicio {
+    background-image: url("./images/fondo_home.png");
+    Background-repeat: no-repeat;
+
+}
+
+
+
 .logo {
+    width: 74px;
+    height: 70px;
     padding: 10px 30px;
 }
 
@@ -30,18 +60,22 @@ header {
     display: flex;
     width: 100%;
     justify-content: right;
+
 }
 
 .items_nav {
     display: inline-block;
-    color: rgb(0, 0, 0);
+    margin-top: 22.5px;
+    font-size: 20;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
     padding: 10px 30px;
     text-decoration: none;
-    background: rgba(245, 0, 0, .2);
+
 }
 
 .items_nav:hover {
-    background: rgba(130, 158, 89,0.4);
+    background: rgba(130, 158, 89, 0.4);
 }
 
 .titulo {
@@ -49,12 +83,38 @@ header {
 
 }
 
-.tit_sobre_nosotros {
+.section_album {
+    background-image: url("./images/fondo_album.png");
+    Background-repeat: no-repeat;
 }
 
-.div_sobre_nosotros {
+.section_album {
     display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 900px;
 }
+
+.container-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-album {
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.container_form {}
+
+
+
+
+.tit_sobre_nosotros {}
+
+.div_sobre_nosotros {}
 
 .div_detalles {
     display: inline-block;
@@ -69,6 +129,12 @@ header {
     width: 100%;
 }
 
-.video {
+.video {}
 
+.container-contacto {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
+
+.section_contacto {}
