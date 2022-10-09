@@ -10,19 +10,15 @@ section {
 }
 
 body {
-    /* position: absolute;
-    Background-repeat: no-repeat;
-    Background-size: cover; */
+ 
 
-    background-color: #BD0003
+    background-color: grey;
 }
 
 header {
     width: 100px;
     height: 101px;
     background-color: #BD0003;
-
-
 }
 
 .div_header {
@@ -30,10 +26,12 @@ header {
     width: 100%;
     height: 101px;
     position: fixed;
-    background-color: #BD0003;
+    background-color: #7f0000;
     background-size: 100% 100%;
+}
 
-
+.btn-menu{
+ display: none;
 }
 
 .section_inicio {
@@ -43,12 +41,12 @@ header {
 }
 
 
-
 .logo {
     width: 74px;
     height: 70px;
     padding: 10px 30px;
 }
+
 
 .nav {
     display: flex;
@@ -78,14 +76,136 @@ header {
     background: rgba(130, 158, 89, 0.4);
 }
 
+.container-nav{
+ display: flex;
+ width: 87%;
+
+}
+
+.container-burguer{
+    display: none;
+}
+
+
+.lista-enlaces-celular{
+    display: none;
+    list-style: none;
+    margin-top: 22.5px;
+    font-size: 20;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+/* icono burguer */
+
+.barras_menu{
+    width: 35px;
+    height: 35px;
+    left: 90%;
+    top: 30%;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.barras_menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activeline1__barras-menu{
+    transform: rotate(45deg) translate(-3px, 1px); 
+}
+
+.activeline2__barras-menu{
+    opacity: 0;
+    margin-left: -40px; 
+}
+
+  
+.activeline3__barras-menu{
+    transform: rotate(-45deg) translate(-3px, 2px);
+}
+/* icono burguer */
+
+
+.nav-celular  
+{
+    display: none;
+}
+
+@media (max-width: 769px){
+.barras_menu{
+  display: block;
+}
+.nav-celular  
+{
+    width: 500px;
+    height: 500px;
+    transition: all 1s;
+    position: absolute;
+    background-color: #7f0000;
+}
+.lista-enlaces-celular{
+    display: block;
+} 
+.container-burguer{
+    display: inline-block;
+}    
+
+.container-nav{
+ display: flex;
+ flex-direction: column;
+}
+
+
+.lista_enlaces{
+    display: flex;
+    flex-direction: column;
+}
+    .nav{
+        display: none;
+    }   
+
+  
+    .div_header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-menu{
+        margin : 15px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 .titulo {
     background: rgba(255, 255, 255, 0.5);
 
 }
 
 .section_album {
-    background-image: url("./images/fondo_album.png");
-    Background-repeat: no-repeat;
+    background-color: blue;
+   /* background-image: url("./images/fondo_album.png");
+    Background-repeat: no-repeat; */
 }
 
 .section_album {
@@ -101,13 +221,26 @@ header {
     align-items: center;
 }
 
+audio{
+    background-color: transparent;
+     margin-top: 5px; 
+}
+
+.container_reproductor{
+    margin-top: 20px;
+    height: 650;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ 
+} 
 .img-album {
     width: 300px;
     height: 200px;
     margin-top: 50px;
 }
 
-.container_form {}
+
 
 
 
@@ -129,14 +262,43 @@ header {
     width: 100%;
 }
 
-.video {}
+
+
+
+.container_form {
+    display: flex;
+    justify-content: center;
+}
 
 .container-contacto {
     display: flex;
     justify-content: center;
     justify-items: center;
 }
+input[type=text], input[type=email]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #bd0003;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
 
+input[type=submit] {
+    width: 100%;
+    background-color: #bd0003;
+    color: black;
+    padding: 14px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #ff0000;
+
+  }
 .section_contacto {}
 
 
@@ -183,3 +345,6 @@ header {
 .controlador-izquierda {
     left: 10px;
 }
+
+
+

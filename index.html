@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./index.js"></script>
     <link rel="stylesheet" href="./estilos.css">
 
     <title>Terrible Banda</title>
@@ -36,11 +35,35 @@
                         <a href="#section_contacto" class="items_nav">Contacto</a>
                     </li>
                 </ul>
-            </nav>
-
+            </nav>   
+            <div class="barras_menu">
+                <span class="line1__barras-menu"></span>
+                <span class="line2__barras-menu"></span>
+                <span class="line3__barras-menu"></span>
+            </div>  
         </div>
-        <br><br><br><br><br><br><br><br><br><br>
     </header>
+    
+        <nav class="nav-celular">
+            <ul class="lista-enlaces-celular">
+                <li>
+                    <a href="#top" class="items_nav">Inicio</a>
+                </li>
+                <li>
+                    <a href="#section_album" class="items_nav">Album</a>
+                </li>
+                <li>
+                    <a href="#section_galeria" class="items_nav">Galeria</a>
+                </li>
+                <li>
+                    <a href="#section_x" class="items_nav">x</a>
+                </li>
+                <li>
+                    <a href="#section_contacto" class="items_nav">Contacto</a>
+                </li>
+            </ul>
+        </nav>   
+        
 
     <main>
         <section class="section_inicio" id="inicio">
@@ -50,13 +73,13 @@
     </main>
     <section class="section_album" id="section_album">
 
-        <div class="container_album">
-
-            <img class="img-album" src="./images/banner terrible mirada roja face.png" alt="">
-            <div>
-                API
-            </div>
-
+        <div class="container_reproductor">
+            <audio controlsList="nodownload" controls src="./audios/WhatsApp Ptt 2022-10-08 at 1.06.04 AM.ogg"></audio>
+            <audio controlsList="nodownload" controls src="./audios/WhatsApp Ptt 2022-10-08 at 1.06.04 AM.ogg"></audio>
+            <audio controlsList="nodownload" controls src="./audios/WhatsApp Ptt 2022-10-08 at 1.06.04 AM.ogg"></audio>
+            <audio controlsList="nodownload" controls src="./audios/WhatsApp Ptt 2022-10-08 at 1.06.04 AM.ogg"></audio>
+            <audio controlsList="nodownload" controls src="./audios/WhatsApp Ptt 2022-10-08 at 1.06.04 AM.ogg"></audio>      
+            <audio controlsList="nodownload" controls src="./audios/WhatsApp Ptt 2022-10-08 at 1.06.04 AM.ogg"></audio>                  
         </div>
 
     </section>
@@ -68,7 +91,7 @@
                     <img src="./images/banner terrible mirada roja face.png"></img>
                 </div>
                 <div class="conteiner-img">
-                    <img src=""></img>
+                    <img src="./images/fondo_home.png"></img>
                 </div>
 
             </div>
@@ -76,9 +99,6 @@
             <button class="controlador-carruzel controlador-izquierda" id="boton-izquierda"> I </button>
 
         </div>
-
-
-
 
 
     </section>
@@ -97,6 +117,7 @@
                     <input type="email" id="mail"><br><br>
                     <label for="">Mensaje</label><br>
                     <input type="text">
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
 
@@ -109,5 +130,5 @@
 
 </body>
 
-
+<script src="./index.js"></script>
 </html>
