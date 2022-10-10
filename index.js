@@ -29,19 +29,19 @@ const line3__bars = document.querySelector(".line3__barras-menu");
 const nav = document.querySelector(".nav-celular");
 nav.style.display = "none";
 
+nav.addEventListener("click", cerrarAbrirMenu);
+
 document
   .querySelector(".barras_menu")
-  .addEventListener("click", menuInteractivo);
+  .addEventListener("click", cerrarAbrirMenu);
 
-document.querySelector(".barras_menu").addEventListener("click", animateBars);
-
-function animateBars() {
+function cerrarAbrirMenu() {
   line1__bars.classList.toggle("activeline1__barras-menu");
   line2__bars.classList.toggle("activeline2__barras-menu");
   line3__bars.classList.toggle("activeline3__barras-menu");
-}
-function menuInteractivo() {
   if (nav.style.display == "none") {
     nav.style.display = "block";
-  } else nav.style.display = "none";
+  } else {
+    nav.style.display = "none";
+  }
 }
