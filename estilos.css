@@ -146,7 +146,7 @@ header {
 }
 .nav-celular  
 {
-    width: 500px;
+    width: 35%;
     height: 500px;
     transition: all 1s;
     position: absolute;
