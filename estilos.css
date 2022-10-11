@@ -135,60 +135,6 @@ header {
     transition: width 4s;
 }
 
-@media (max-width: 769px) {
-    header {
-        height: 2%;
-    }
-    .barras_menu {
-        display: block;
-    }
-    .nav-celular {
-        width: 100%;
-        /* height: 100%; */
-        transition: all 1s;
-        position: absolute;
-        /* background-color: #d30808; */
-        display: flex;
-        background-color: #580000;
-        visibility: visible;
-        z-index: 1000;
-        align-items: flex-start;
-    }
-    .lista-enlaces-celular {
-        display: block;
-    }
-    .container-burguer {
-        display: inline-block;
-    }
-    /* .li__celular {
-        height: 100%;
-    } */
-
-    .container-nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .lista_enlaces {
-        display: flex;
-        flex-direction: column;
-    }
-    .nav {
-        display: none;
-    }
-
-    .div_header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .btn-menu {
-        margin: 15px;
-        display: block;
-        background-color: transparent;
-        border: none;
-    }
-}
 
 .titulo {
     background: rgba(255, 255, 255, 0.5);
@@ -196,13 +142,17 @@ header {
 
 .section_album {
     width: 100%;
+}
+
+.conteiner_album{
+   margin-top: 150px;
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    flex-direction: column;
+   align-items: center;
 }
 
 .contenedor_banner {
-    display: block;
+   margin: 20px;
     
 }
 
@@ -240,17 +190,13 @@ header {
     width: 100%;
 }
 
-.container_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+  
 }
 
 .container-contacto {
@@ -283,15 +229,9 @@ input[type="submit"] {
   }
   input[type=submit]:hover {
     background-color: #ff0000;
-    
-
   }
-
-  
-
-
   .container_form{
-    width: 25%;
+    width: 30%;
     height: 100%;
     background-color:#DC5909;
     border:solid;
@@ -303,7 +243,7 @@ input[type="submit"] {
   }
 
   .container-contacto{
-     
+     width: 100%;
   }
 
 .section_contacto {
@@ -386,4 +326,62 @@ footer h3{
  footer p {
     font-size: small;
     font-family: Courier;
+}
+
+@media (max-width: 769px) {
+    header {
+        height: 2%;
+    }
+    .barras_menu {
+        display: block;
+    }
+    .nav-celular {
+        width: 100%;
+        /* height: 100%; */
+        transition: all 1s;
+        position: absolute;
+        /* background-color: #d30808; */
+        display: flex;
+        background-color: #580000;
+        visibility: visible;
+        z-index: 1000;
+        align-items: flex-start;
+    }
+    .lista-enlaces-celular {
+        display: block;
+    }
+    .container-burguer {
+        display: inline-block;
+    }
+    /* .li__celular {
+        height: 100%;
+    } */
+
+    .container-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista_enlaces {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav {
+        display: none;
+    }
+
+    .div_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn-menu {
+        margin: 15px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    .container_form{
+        width: 70%;
+    }
 }
