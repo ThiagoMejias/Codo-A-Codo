@@ -136,7 +136,15 @@ header {
     /* transition: all 1s; */
     width: 0;
     transition: width 4s;
+    opacity: 0;
 }
+.active-header{
+    opacity: 1;
+}
+    
+
+
+
 
 /* inicio */
 
@@ -180,7 +188,6 @@ header {
 
 
 
-
 .titulo {
     background: rgba(255, 255, 255, 0.5);
 }
@@ -206,6 +213,23 @@ header {
     
 }
 
+.container_vivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-vivo{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.section-vivo h2{
+    margin: 20px;
+}
+.video{
+ 
+}
 .container_reproductor {
     width: 80%;
     margin-top: 20px;
@@ -294,19 +318,30 @@ input[type="submit"] {
     background-color:#fd6709;
   }
 
+
   .container-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
      width: 100%;
   }
 
 .section_contacto {
     background-color: white(225, 115, 41);
     height: 400px;
+    margin-bottom: 50px;
 }
-
+.section-galeria{
+    height: 200px;
+    margin: 150px;
+    top: 200px;
+}
 .carruzel {
     display: flex;
     width: 200%;
-    height: 200%;
+    height: 200px;
+    border: solid;
+    border-color: black;
 }
 
 .container-carruzel {
@@ -371,14 +406,15 @@ footer{
     background-color: white;
 }
 
-footer h3{
-    font-family: monospace;
+.container-contacto h2{
+ margin-bottom: 15px;
 }
 
  footer p {
     font-size: small;
     font-family: Courier;
 }
+
 
 @media (max-width: 769px) {
     header {
@@ -387,18 +423,7 @@ footer h3{
     .barras_menu {
         display: block;
     }
-    .nav-celular {
-        width: 100%;
-        /* height: 100%; */
-        transition: all 1s;
-        position: absolute;
-        /* background-color: #d30808; */
-        display: flex;
-        background-color: #580000;
-        visibility: visible;
-        z-index: 1000;
-        align-items: flex-start;
-    }
+    
     .lista-enlaces-celular {
         display: block;
     }
@@ -409,6 +434,20 @@ footer h3{
         height: 100%;
     } */
 
+    .nav-celular {
+        width: 100%;
+        display: block;
+        transition: all 1s;
+        position: absolute;
+        background-color: #d30808;
+        display: flex;
+        /* background-color: #580000; */
+        visibility: visible;
+        z-index: 1000;
+        align-items: flex-start;
+    }
+    
+    
     .container-nav {
         display: flex;
         flex-direction: column;
@@ -421,7 +460,6 @@ footer h3{
     .nav {
         display: none;
     }
-
     .div_header {
         display: flex;
         justify-content: space-between;
