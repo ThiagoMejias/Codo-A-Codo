@@ -70,8 +70,9 @@ header {
 }
 
 .items_nav:hover {
-    background: rgba(130, 158, 89, 0.4);
+    background: rgba(255, 255, 255, 0.156);
     transform: scale(1.1);
+    color:#bd0003
 }
 
 .container-nav {
@@ -92,6 +93,7 @@ header {
     color: white;
     padding: 10px 30px;
     text-decoration: none;
+    background: rgba(211, 8, 8, 1);
 }
 /* icono burguer */
 
@@ -135,6 +137,48 @@ header {
     width: 0;
     transition: width 4s;
 }
+
+/* inicio */
+
+.section_inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container_inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    margin-top: 50px;
+    box-shadow: 6px 20px 10px rgb(157, 35, 35);
+}
+
+.container_texto {
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.container_inicio h1 {
+    
+    font-family: 'Courier New', Courier, monospace;
+     font-size: 45px;
+     text-shadow: 3px 4px 3px grey;
+} 
+
+.container_inicio p{
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* inicio */
+
+
+
 
 
 .titulo {
@@ -204,8 +248,8 @@ form{
     align-items: center;
     justify-content: center;
     box-shadow: 6px 20px 10px black;
-  
 }
+
 
 .container-contacto {
     display: flex;
@@ -256,7 +300,7 @@ input[type="submit"] {
 
 .section_contacto {
     background-color: white(225, 115, 41);
-    height: 500px;
+    height: 400px;
 }
 
 .carruzel {
