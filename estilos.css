@@ -131,20 +131,14 @@ header {
 /* icono burguer */
 
 .nav-celular {
-    /* display: none; */
-    /* visibility: hidden; */
-    /* transition: all 1s; */
-    width: 0;
-    transition: width 4s;
-    opacity: 0;
+    display: none;
 }
+
 .active-header{
-    opacity: 1;
-}
+    visibility:visible !important;
+    opacity: 1 !important;
+} 
     
-
-
-
 
 /* inicio */
 
@@ -331,52 +325,50 @@ input[type="submit"] {
     height: 400px;
     margin-bottom: 50px;
 }
+
+
+
 .section-galeria{
-    height: 200px;
-    margin: 150px;
-    top: 200px;
-}
-.carruzel {
     display: flex;
-    width: 200%;
-    height: 200px;
-    border: solid;
-    border-color: black;
-}
-
-.container-carruzel {
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    border: solid;
-    border-color: white;
-    width: 90%;
-    max-width: 750px;
-    overflow: hidden;
-    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 60%;
 }
 
-.conteiner-img {
-    display: block;
+
+.container-imagenes{
+    display: flex;
+    width: 90%;
+    border: solid;
+    height: 300px;
+    flex-direction: column;
+}
+.container-imagenes img {
+    display: none;
+    opacity: 1;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    transition: width 1s;
+}
+.active-img{
+    
 }
 
-.controlador-carruzel {
-    position: absolute;
+.controladores{
     width: 40px;
     height: 40px;
-    top: 50%;
-    background-color: transparent;
-    cursor: pointer;
+    margin: 20px;
+}
+.controladores:hover{
+    background-color: #de4a4d;
+    transition: all 1s;
 }
 
-.controlador-derecha {
-    right: 10px;
-}
 
-.controlador-izquierda {
-    left: 10px;
-}
+
 
 footer{
     display: flex;
@@ -436,15 +428,13 @@ footer{
 
     .nav-celular {
         width: 100%;
+        opacity: 0;
         display: block;
-        transition: all 1s;
+        visibility: hidden;
+        transition: all 0.5s;
         position: absolute;
         background-color: #d30808;
-        display: flex;
-        /* background-color: #580000; */
-        visibility: visible;
         z-index: 1000;
-        align-items: flex-start;
     }
     
     
