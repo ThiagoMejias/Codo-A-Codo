@@ -55,6 +55,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: right;
+    align-items: center;
 }
 
 .items_nav {
@@ -144,11 +145,16 @@ header {
     width: 100%;
 }
 
+.titulo-album{
+    text-shadow: 10px 10px 5px grey;
+}
+
 .conteiner_album{
    margin-top: 150px;
     display: flex;
     flex-direction: column;
    align-items: center;
+  
 }
 
 .contenedor_banner {
@@ -159,6 +165,7 @@ header {
 .container_reproductor {
     width: 80%;
     margin-top: 20px;
+    box-shadow: 6px 20px 10px grey;
     /* height: 650;
     display: flex;
     flex-direction: column;
@@ -196,6 +203,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 6px 20px 10px black;
   
 }
 
