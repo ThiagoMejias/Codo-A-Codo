@@ -274,18 +274,10 @@ input[type="submit"] {
     background-color: #bd0003;
     color: black;
     padding: 14px 20px;
-    padding: 12px 20px;
     margin-top: 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-<<<<<<< Updated upstream
-}
-input[type="submit"]:hover {
-    background-color: #ff0000;
-}
-.section_contacto {
-=======
     border: solid;
     border-color: black;
   }
@@ -317,7 +309,6 @@ input[type="submit"]:hover {
 .section_contacto {
     background-color: white(225, 115, 41);
     height: 500px;
->>>>>>> Stashed changes
 }
 
 .carruzel {
@@ -359,8 +350,6 @@ input[type="submit"]:hover {
 .controlador-izquierda {
     left: 10px;
 }
-<<<<<<< Updated upstream
-=======
 
 footer{
     display: flex;
@@ -398,4 +387,3 @@ footer h3{
     font-size: small;
     font-family: Courier;
 }
->>>>>>> Stashed changes
