@@ -146,6 +146,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 150px;
 }
 
 
@@ -301,7 +302,7 @@ input[type="submit"] {
     background-color: #ff0000;
   }
   .container_form{
-    width: 30%;
+    width: 25%;
     height: 100%;
     background-color:#DC5909;
     border:solid;
@@ -330,6 +331,7 @@ input[type="submit"] {
 
 .section-galeria{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -338,35 +340,55 @@ input[type="submit"] {
     width: 60%;
 }
 
-
 .container-imagenes{
     display: flex;
     width: 90%;
     border: solid;
-    height: 300px;
+    height: 400px;
     flex-direction: column;
+    box-shadow: 6px 20px 10px grey;
 }
 .container-imagenes img {
     display: none;
-    opacity: 1;
     width: 100%;
     height: 100%;
-    transition: width 1s;
+    transition: all 0.6s;
 }
-.active-img{
-    
+
+.active-img {
+   position: static;
+   opacity: 1 !important;
+   visibility: visible!important;
+   transition: all 1;
+   
 }
 
 .controladores{
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     margin: 20px;
+    box-shadow: 2px 5px 5px grey;
 }
+.container_btns{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
 .controladores:hover{
+    background-color: #de4a4d;
+    transition: all .6s;
+    transform: scale(1.3);
+}
+
+.controladores-celular{
+    display: none;
+}
+.controladores-celular:hover{
     background-color: #de4a4d;
     transition: all 1s;
 }
-
 
 
 
@@ -408,6 +430,20 @@ footer{
 }
 
 
+@media (max-width: 1050px) {
+
+    .container-imagenes{
+        height: 200px;
+    }
+    .container_form{
+        width: 40%;
+    }
+
+}
+
+
+
+
 @media (max-width: 769px) {
     header {
         height: 2%;
@@ -422,11 +458,7 @@ footer{
     .container-burguer {
         display: inline-block;
     }
-    /* .li__celular {
-        height: 100%;
-    } */
-
-    .nav-celular {
+     .nav-celular {
         width: 100%;
         opacity: 0;
         display: block;
@@ -436,8 +468,6 @@ footer{
         background-color: #d30808;
         z-index: 1000;
     }
-    
-    
     .container-nav {
         display: flex;
         flex-direction: column;
@@ -461,7 +491,10 @@ footer{
         background-color: transparent;
         border: none;
     }
+    .section-galeria{
+      flex-direction: column;
+    }
     .container_form{
-        width: 70%;
+        width: 60%;
     }
 }
