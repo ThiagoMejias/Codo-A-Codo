@@ -46,5 +46,4 @@ function atras() {
     : (imagenActual = contenedor.lastElementChild);
   imagenActual.style.display = "block";
 }
-
 // galeria
