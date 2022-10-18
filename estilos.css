@@ -1,6 +1,13 @@
 * {
     margin: 0;
-    
+}
+
+* h1{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
 
 }
 /* 
@@ -40,8 +47,8 @@ header {
 }
 
 .section_inicio {
-    /* border: solid;
-    border-color: black; */
+   width: 100%;
+   height: 10000px;
 }
 
 .logo {
@@ -232,8 +239,7 @@ header {
 }
 
 .titulo-album{
-    font-family: 'Courier New', Courier, monospace;
-     font-size: 45px;
+
 }
 
 .conteiner_album{
@@ -477,7 +483,9 @@ font-size: 45px;
     font-size: small;
     font-family: Courier;
 }
-
+.nuevaImagen{
+   margin-bottom: 100px;
+}
 
 @media (max-width: 1050px) {
 
@@ -489,7 +497,7 @@ font-size: 45px;
     }
     .nuevaImagen{
         width: 200px!important;
-       
+       margin-bottom: 50px;
     }
 }
 
@@ -559,13 +567,22 @@ font-size: 45px;
  
 
     .nuevaImagen{
-        width: 180px!important;
-       
+        width: 150px!important;
+       height: 100px;
+       margin-bottom: 100px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 570px) {
     .nuevaImagen{
-        width: 150px!important;
+        width: 125px!important;
+        height: 75px;
+        margin-bottom: 130px;
+    }
+}
+@media (max-width: 460px) {
+    .nuevaImagen{
+     
+        margin-bottom: 150px;
     }
 }
