@@ -1,5 +1,6 @@
 * {
     margin: 0;
+   
 }
 
 * h1{
@@ -8,6 +9,8 @@
     font-size: 30px;
     margin: 30px;
     text-align: center;
+    text-transform: uppercase;
+
 
 }
 /* 
@@ -20,6 +23,7 @@ section {
     --naranjita: #DD5A0A;
   }
 body {
+    background-color: #a2a2a22d;
 }
 
 main {
@@ -400,7 +404,7 @@ input[type="button"] {
     width: 90%;
     border: solid;
     border-color: #DD5A0A;
-    height: 400px;
+    height: 80%;
     flex-direction: column;
 }
 .container-imagenes img {
@@ -487,10 +491,15 @@ font-size: 45px;
    margin-bottom: 100px;
 }
 
+.lbl_Mensaje{
+    color: red;
+    font-size: 30px;
+}
+
 @media (max-width: 1050px) {
 
     .container-imagenes{
-        height: 200px;
+        /* height: 300px; */
     }
     .container_form{
         width: 40%;
@@ -498,6 +507,7 @@ font-size: 45px;
     .nuevaImagen{
         width: 200px!important;
        margin-bottom: 50px;
+       height: 300px;
     }
 }
 
@@ -551,7 +561,8 @@ font-size: 45px;
 
     .container_imagenes{
      display: flex;
-     flex-wrap: wrap;   
+     flex-wrap: wrap; 
+     
     }
 
     .btn-menu {
@@ -570,22 +581,26 @@ font-size: 45px;
  
 
     .nuevaImagen{
-        width: 150px!important;
-       height: 100px;
+        width: 250px!important;
        margin-bottom: 100px;
+       margin-bottom: 200px;
     }
 }
 
 @media (max-width: 570px) {
     .nuevaImagen{
-        width: 125px!important;
-        height: 75px;
+        width: 200px!important;
+        height: 300px;
         margin-bottom: 130px;
+    }
+    .container-imagenes{
+        width: 85% ;
+        height: 85%;
     }
 }
 @media (max-width: 460px) {
     .nuevaImagen{
-     
-        margin-bottom: 150px;
+     width: 150px;
+    margin-bottom: 150px;
     }
 }

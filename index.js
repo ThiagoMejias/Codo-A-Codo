@@ -56,7 +56,7 @@ function validarForm() {
   const txtNombre = document.getElementById("fname");
   const txtMail = document.getElementById("mail");
 
-  if (txtNombre.value.length < 1 || txtMail.value.length < 1)
-    alert("Campo Vacio");
-  else document.getElementById("form").submit();
+  if (txtNombre.value.length < 1 || txtMail.value.length < 1) {
+    alert("Hay algun campo vacio!");
+  } else document.getElementById("form").submit();
 }
