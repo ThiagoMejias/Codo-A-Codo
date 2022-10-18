@@ -47,3 +47,16 @@ function atras() {
   imagenActual.style.display = "block";
 }
 // galeria
+
+// form
+const btn = document.getElementById("btnForm");
+btn.addEventListener("click", validarForm);
+
+function validarForm() {
+  const txtNombre = document.getElementById("fname");
+  const txtMail = document.getElementById("mail");
+
+  if (txtNombre.value.length < 1 || txtMail.value.length < 1)
+    alert("Campo Vacio");
+  else document.getElementById("form").submit();
+}
