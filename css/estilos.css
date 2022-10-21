@@ -460,10 +460,11 @@ input[type="button"] {
     border: solid;
     width: 350px;
     margin: 20px;
-    background-image: linear-gradient(to right, #fb6000 1%, #ff0808  51%, #ff1616  100%);
+    background-image: linear-gradient(to right, #dd5b0a 1%, #d30808  51%, #d30808  100%);
     border:solid;
     transition: all 0.5s;
 }
+
 .section-opinon{
  display: flex;
  flex-direction: column;
