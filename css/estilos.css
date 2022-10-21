@@ -450,7 +450,25 @@ input[type="button"] {
 }
 
 
-
+.conteiner_opiniones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-opinion{
+    border: solid;
+    width: 350px;
+    margin: 20px;
+    background-image: linear-gradient(to right, #fb6000 1%, #ff0808  51%, #ff1616  100%);
+    border:solid;
+    transition: all 0.5s;
+}
+.section-opinon{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
 footer{
     display: flex;
     flex-direction: column;
@@ -468,6 +486,7 @@ footer{
 .contenedor_nav_redes{
   
 }
+
 
 .nav-redes{
     display: flex;
